@@ -16,7 +16,7 @@ export class TareaListComponent implements OnInit {
 
   constructor(private tareaService: TareaService) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {    
     this.tareaService.getTareas().subscribe(data => {
       this.tareas = data;
     });
