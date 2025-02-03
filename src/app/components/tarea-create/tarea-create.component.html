@@ -1,1 +1,8 @@
-<p>tarea-create works!</p>
+<h2>Crear Tarea</h2>
+<form (ngSubmit)="createTarea()">
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" [(ngModel)]="tarea.nombre" name="nombre" required>
+  <label for="descripcion">Descripción:</label>
+  <input type="text" id="descripcion" [(ngModel)]="tarea.descripcion" name="descripcion" required>
+  <button type="submit">Crear</button>
+</form>
