@@ -1,0 +1,8 @@
+<h2>Editar Tarea</h2>
+<form *ngIf="tarea" (ngSubmit)="updateTarea()">
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" [(ngModel)]="tarea.nombre" name="nombre" required>
+  <label for="descripcion">Descripción:</label>
+  <input type="text" id="descripcion" [(ngModel)]="tarea.descripcion" name="descripcion" required>
+  <button type="submit">Actualizar</button>
+</form>

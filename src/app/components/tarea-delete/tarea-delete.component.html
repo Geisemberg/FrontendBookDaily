@@ -1,0 +1,4 @@
+<h2>Eliminar Tarea</h2>
+<p *ngIf="tarea">¿Estás seguro de que deseas eliminar la tarea "{{ tarea.nombre }}"?</p>
+<button *ngIf="tarea" (click)="deleteTarea()">Eliminar</button>
+<button (click)="navigateToTareas()">Cancelar</button>
